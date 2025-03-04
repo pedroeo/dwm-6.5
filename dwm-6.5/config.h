@@ -11,8 +11,8 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "SourceCodePro:size=12", "fontawesome:size16" };
-static const char dmenufont[]       = "SourceCodePro:size=12";
+static const char *fonts[]          = { "SourceCodePro:size=14", "fontawesome:size16" };
+static const char dmenufont[]       = "SourceCodePro:size=14";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -25,7 +25,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "" };
+static const char *tags[] = { "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -35,8 +35,9 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "firefox",  NULL,       NULL,       1 << 1,       0,           -1 },
+  { "thunderbird", NULL,    NULL,       1 << 0,       0,           -1 },
 	{ NULL,       NULL,       "newsboat", 1 << 2,       0,           -1 },
-	{ "Pcmanfm",       NULL,       NULL,       1 << 3,       0,           -1 },
+	{ "Thunar",       NULL,       NULL,       1 << 3,       0,           -1 },
 };
 
 /* layout(s) */
